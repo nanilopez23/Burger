@@ -17,15 +17,15 @@
         <div class="container">
             <div class="row">
                 <div class="four columns">
-                    <h1><img src="assest/logo.png" alt="">Burger</h1>
+                    <h1><img src="assest/logo.png" alt="Logo">Burger</h1>
                 </div>
-                <div class="four columns u-pull-right">
+                <div class="two columns u-pull-right">
                     <ul>
                         <li class="submenu">
                             <img src="assest/cart.png" alt="">
                             <div id="carrito">
                                 <p class="vacio">carrito vacio</p>
-                                <table class="u-full-width">
+                                <table id="lista-carrito" class="u-full-width">
                                     <thead>
                                         <tr>
                                             <th>Imagen</th>
@@ -34,25 +34,11 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>
-                                                <img src="assest/platillo1.jpg" width="100">
-                                            </td>
-                                            <td>Hamburguesa con helado</td>
-                                            <td>$15</td>
-                                            <td><a href="#" class="borrar-platillo" >X</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="assest/platillo3.jpg" width="100">
-                                            </td>
-                                            <td>Hamburguesa sencilla</td>
-                                            <td>$15</td>
-                                            <td><a href="#" class="borrar-platillo" >X</a></td>
-                                        </tr>
+                                        
                                     </tbody>
                                 </table>
-                                <a href="#" class="button u-full-width">vaciar carrito</a>
+                                <a href="#" id="vaciar-carrito"
+                                class="button u-full-width">vaciar carrito</a>
                             </div>
                         </li>
                     </ul>
@@ -99,7 +85,7 @@
 
 
 
-    <div class="lista-platillos" class="container">
+    <div id="lista-platillos" class="container">
         <h1 class="encabezado">Pedidos en Linea</h1>
 
         <div class="row">
@@ -123,7 +109,7 @@
                         <p>Bebida ilimitada</p>
                         <img src="assest/estrellas.png">
                         <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar al carrito</a>
                     </div>
                 </div>
             </div>
@@ -135,7 +121,7 @@
                         <p>Bebida ilimitada</p>
                         <img src="assest/estrellas.png">
                         <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar al carrito</a>
                     </div>
                 </div>
             </div>
@@ -150,7 +136,19 @@
                         <p>Bebida ilimitada</p>
                         <img src="assest/estrellas.png">
                         <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="assest/platillo4.jpg" class="imagen-platillo u-full-width">
+                    <div class="info-card">
+                        <h4>Hamburguesa con papas</h4>
+                        <p>Bebida ilimitada</p>
+                        <img src="assest/estrellas.png">
+                        <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar al carrito</a>
                     </div>
                 </div>
             </div>
@@ -158,23 +156,11 @@
                 <div class="card">
                     <img src="assest/platillo5.jpg" class="imagen-platillo u-full-width">
                     <div class="info-card">
-                        <h4>Hamburguesa con papas</h4>
-                        <p>Bebida ilimitada</p>
-                        <img src="assest/estrellas.png">
-                        <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-            <div class="four columns">
-                <div class="card">
-                    <img src="assest/platillo1.jpg" class="imagen-platillo u-full-width">
-                    <div class="info-card">
                         <h4>Hamburguesa con helado</h4>
                         <p>Bebida ilimitada</p>
                         <img src="assest/estrellas.png">
                         <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar al carrito</a>
                     </div>
                 </div>
             </div>
@@ -189,7 +175,7 @@
                         <p>Bebida ilimitada</p>
                         <img src="assest/estrellas.png">
                         <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar al carrito</a>
                     </div>
                 </div>
             </div>
@@ -201,7 +187,7 @@
                         <p>Bebida ilimitada</p>
                         <img src="assest/estrellas.png">
                         <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar al carrito</a>
                     </div>
                 </div>
             </div>
@@ -213,7 +199,7 @@
                         <p>Bebida ilimitada</p>
                         <img src="assest/estrellas.png">
                         <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar al carrito</a>
                     </div>
                 </div>
             </div>
@@ -227,8 +213,8 @@
                         <h4>Hamburguesa sencilla</h4>
                         <p>Bebida ilimitada</p>
                         <img src="assest/estrellas.png">
-                        <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <p class="precio">$50 <span class="u-pull-right">$30</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar al carrito</a>
                     </div>
                 </div>
             </div>
@@ -240,7 +226,7 @@
                         <p>Bebida ilimitada</p>
                         <img src="assest/estrellas.png">
                         <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar al carrito</a>
                     </div>
                 </div>
             </div>
@@ -251,8 +237,8 @@
                         <h4>Hamburguesa con helado</h4>
                         <p>Bebida ilimitada</p>
                         <img src="assest/estrellas.png">
-                        <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <p class="precio">$50 <span class="u-pull-right">$20</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar al carrito</a>
                     </div>
                 </div>
             </div>
@@ -284,7 +270,7 @@
             </div>
         </div>
     </footer>
-    
-    
+
+    <script src="app.js"></script>
 </body>
 </html>
